@@ -1,0 +1,162 @@
+.menu {
+    // border: 1px solid brown;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 6rem;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: all 1s ease-in-out;
+}
+
+.closebtn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 86%;
+}
+
+.menu_container {
+    background-color: $white-text;
+    width: 86%;
+    // height: 100px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.1), 0px 20px 20px rgba(0,0,0,0.1);
+    padding: 2.5rem;
+    
+    hr {
+        color: $bg-submenu;
+        width: 100%;
+        margin: 2.8rem 0 1rem 0;
+    }
+}
+
+.menu_heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-list-container {
+    width: 100%;
+}
+
+.menu_list {
+    width: 100%;
+    h4 {
+       color: $headings;
+       font-size: 1.7rem;
+       padding: 1.5rem 0;
+       cursor: pointer;
+    }
+
+    &:hover {
+        h4 {
+            color: $footer-text;
+        }
+
+        .sub_menu {
+            display: block;   
+        }
+
+        .arrowdark {
+            transform: rotate(-180deg);
+        }
+    }
+}
+
+.sub_menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    text-align: center;
+    width: 100%;
+    background-color: $bg-submenu;
+    padding: 1.4rem;
+
+    a {
+        display: block;
+        color: $Very-dark-grayish-blue;
+        font-size: 1.5rem;
+        font-weight: weight(bold);
+        padding: 1rem;
+
+        &:hover {
+            color: $headings;
+        }
+    }
+
+    display: none;
+}
+
+.arrowdark {
+    margin-left: 1rem;
+    transition: all 0.5s ease-out;
+}
+
+.button_login-signup {
+    font-size: 1.7rem;
+}
+
+.btn_login {
+    color: $headings;
+    margin-bottom: 1rem;
+
+    &:hover {
+        background-color: $footer-bg;
+
+        & div:not(:hover) {
+            color: $white-text;
+        }
+
+        div {
+            &:hover {
+                color: $white-text;
+            }
+        }
+    }
+}
+
+.btn_signup {
+    background-image: linear-gradient(135deg,$bg-grad-one, $bg-grad-two);
+    color: $white-text;
+
+    &:hover {
+        background-image: none;
+        border: 1px solid $CTA-hover-background;
+
+        & div:not(:hover) {
+            color: $CTA-hover-background;
+        }
+
+        div {
+            &:hover {
+                color: $CTA-hover-background;
+            }
+        }
+    }
+}
+
+.menu_hide {
+    left: 100%;
+    opacity: 0;
+}
+
+.hamburger {
+    transition: all 1s ease-in-out;
+}
+
+.hamburger_hide {
+    opacity: 0;
+}

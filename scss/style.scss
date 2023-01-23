@@ -1,0 +1,48 @@
+//Variables
+
+// ## Colors
+
+// ### Primary
+
+$CTA-text: hsl(356, 100%, 66%);
+$CTA-hover-background: hsl(355, 100%, 74%);
+$headings: hsl(208, 49%, 24%);
+
+// ### Neutral
+
+$white-text: hsl(0, 0%, 100%);
+$footer-text: hsl(240, 2%, 79%);
+$Very-dark-grayish-blue: hsl(207, 13%, 34%);
+$footer-bg: hsl(240, 10%, 16%);
+
+// ### Gradient
+
+// Background gradient - Intro/CTA mobile nav:
+
+$bg-grad-one: hsl(13, 100%, 72%);
+$bg-grad-two: hsl(353, 100%, 62%);
+
+// Background gradient - body:
+
+$bg-grad-three: hsl(237, 17%, 21%);
+$bg-grad-four: hsl(237, 23%, 32%);
+
+$bg-submenu: rgb(239,239,241);
+
+$font-weights: (
+    "regular":400,
+    "bold":700
+);
+
+@import "reset";
+@import "header";
+@import "section";
+@import "footer";
+@import "navmenu";
+@import "media1440";
+
+
+
+@function weight($weight-name) {
+    @return map-get($font-weights, $weight-name);
+}

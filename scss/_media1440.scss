@@ -1,0 +1,250 @@
+@media screen and (min-width: 992px) {
+    .menu {
+        // border: 1px solid brown;
+        position: static;
+        padding: 0;
+        width: 100%;
+        height: auto;
+
+    }
+    
+    .closebtn {
+        display: none;
+    }
+    
+    .menu_container {
+        background-color: transparent;
+        width: 100%;
+        // height: 100px;
+        border-radius: 0;
+        box-shadow: none;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 0;
+        padding: 0;
+        
+        hr {
+           display: none;
+        }
+    }
+    
+    .menu-list-container {
+        // border: 1px solid green;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 35%;
+    }
+    
+    .menu_list {
+        position: relative;
+
+        h4 {
+           color: $white-text;
+           opacity: 0.75;
+        }
+    
+        &:hover {
+            h4 {
+                color: $white-text;
+                opacity: 1;
+                text-decoration: underline;
+            }
+    
+            .arrowdark {
+                opacity: 1;
+            }
+        }
+    }
+    
+    .sub_menu {
+        position: absolute;
+        align-items: flex-start;
+        justify-content: center;
+        background-color: $white-text;
+    
+        a {
+
+            &:hover {
+                font-size: 1.6rem;
+            }
+        }
+    
+        display: none;
+        box-shadow: 0px 10px 20px rgba(0,0,0,0.1) 0px 20px 30px rgba(0,0,0,0.1);
+    }
+    
+    .arrowdark {
+        filter: brightness(200%);
+        opacity: 0.75;
+    }
+    
+    .button_login-signup {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       gap: 5%;
+    }
+    
+    .btn_login {
+        color: $white-text;
+        margin-bottom: 0;
+    }
+    
+    .btn_signup {
+        background-image: none;
+        color: $CTA-text;
+        background-color: $white-text;
+    
+        &:hover {
+            border: none;
+            background-color: $CTA-hover-background;
+    
+            & div:not(:hover) {
+                color: $white-text;
+            }
+    
+            div {
+                &:hover {
+                    color: $white-text;
+                }
+            }
+        }
+    }
+    
+    .menu_hide {
+        left: 0;
+        opacity: 3;
+    }
+    
+    .hamburger {
+        display: none;
+    }
+
+    // Header
+    .header {
+        padding: 5.7rem 17rem 0 17rem;
+        background-size: 230%, 100%;
+        background-position: 25% 52%, 0% 0%;
+    }
+
+    .header_text {
+        h1 {
+            font-size: 6rem;
+
+            span {
+                display: initial;
+            }
+        }
+
+        h2 {
+            font-size: 2rem;
+           
+        }
+    }
+    
+    .button {
+        justify-content: center;
+        gap: 1.5%;
+    }
+
+    // Section
+    .img-editor-mobile, .img-laptop-mobile {
+        display: none;
+    }
+
+    .illustration-desktop {
+        display: block;
+        position: absolute;
+        top: 10%;
+        left: 56%;
+    }
+
+    .section {
+        position: relative;
+        overflow: hidden;
+        padding: 15.5rem 17rem 22rem 17rem;
+
+        h2 {
+            font-size: 4rem;
+        }
+    }
+
+    .section_text {
+        width: 48%;
+        text-align: left;
+
+        h3 {
+            margin-top: 10.5rem;
+            span {
+                display: initial;
+            }
+        }
+    }
+
+    .section_content {
+        align-items: flex-start;
+    }
+
+    .blogr_phone {
+        height: 4rem;
+    }
+
+    .img_phone {
+        z-index: 1;
+        top: -11rem;
+        left: 12rem;
+        width: 55rem;
+    }
+
+    .mid {
+        align-items: flex-end;
+        height: 40rem;
+        background-size: 70%, 100%;
+        background-position: -48% 81%, 0% 0%;
+        .section_content {
+            width: 49%;
+        }
+    }
+
+    .section_text_phone {
+        text-align: center;
+        width: 100%;
+
+        h1 {
+            font-size: 3.8rem;
+            margin-top: 8rem;
+        }
+    }
+
+    .sectionlaptop {
+
+        .section_content {
+            align-items: flex-end;
+        }
+    }
+
+    .img-laptop-desktop {
+        position: absolute;
+        left: -19%;
+        top: 12%;
+        display: block;
+    }
+
+    // Footer
+    .footer {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding-left: 15rem;
+        padding-right: 35rem;
+
+        h4 {
+            margin-top: 0;
+        }
+    }
+
+    .footerB {
+        justify-content: flex-start;
+    }
+}

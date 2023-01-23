@@ -1,0 +1,115 @@
+.section {
+    // border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10.2rem 2.5rem 0 2.5rem;
+
+    h2 {
+        color: $headings;
+        font-size: 2.6rem;
+        font-weight: weight(bold);
+    }
+}
+
+.section_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.img-editor-mobile {
+    margin-top: 7.8rem;
+    margin-bottom: 4rem;
+    width: 100%;
+    transform: scale(1.25);
+}
+
+.section_text {
+    // border: 1px solid green;
+    text-align: center;
+    width: 90%;
+
+    h3 {
+        color: $headings;
+        font-size: 2.8rem;
+        margin-top: 4.2rem;
+        line-height: 3.2rem;
+
+        span {
+            display: block;
+        }
+    }
+
+    p {
+        margin-top: 2.5rem;
+        font-size: 1.7rem;
+        color: $Very-dark-grayish-blue;
+        line-height: 2.8rem;
+        font-weight: weight(regular);
+    }
+}
+
+.img-laptop-mobile {
+    margin-top: 7.8rem;
+    margin-bottom: 4rem;
+    width: 100%;
+    transform: scale(1.52);
+}
+
+.blogr_phone {
+    // border: 1px solid purple;
+    width: 100%;
+    position: relative;
+    height: 26.5rem;
+}
+
+.img_phone {
+    position: absolute;
+    top: 0;
+    left: -8px;
+    width: 375px;
+    margin-top: 7.8rem;
+}
+
+.mid {
+    background-repeat: no-repeat, no-repeat;
+    background-position: 50% -1950%, 0% 0%;
+    background-size: 163%, 100%;
+    height: 62.5rem;
+    background-image: url("../images/bg-pattern-circles.svg"), linear-gradient($bg-grad-three, $bg-grad-four);
+    border-bottom-left-radius: 100px;
+    border-top-right-radius: 100px;
+}
+
+.section_text_phone {
+    // border: 1px solid green;
+    text-align: center;
+    width: 90%;
+
+    h3 {
+        color: $white-text;
+        font-size: 2.8rem;
+        margin-top: 1.4rem;
+        line-height: 5rem;
+    }
+
+    p {
+        margin-top: 1.8rem;
+        font-size: 1.7rem;
+        color: $white-text;
+        line-height: 2.8rem;
+        font-weight: weight(regular);
+    }
+}
+
+.sectionlaptop {
+    padding: 5.0rem 2.5rem 0 2.5rem;
+} 
+
+.illustration-desktop, .img-laptop-desktop {
+    display: none;
+}
